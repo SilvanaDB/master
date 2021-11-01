@@ -1,10 +1,11 @@
 /**
  * Web application
  */
-const apiUrl = '';
+const apiUrl = 'https://5158913c.eu-gb.apigw.appdomain.cloud/guestbook';
 const guestbook = {
   // retrieve the existing guestbook entries
   get() {
+     console.log('GET::: ', ${apiUrl})
     return $.ajax({
       type: 'GET',
       url: `${apiUrl}/entries`,
